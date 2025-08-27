@@ -25,7 +25,7 @@ export default function LoginForm() {
     setServerMessage("");
     setLoading(true);
 
-    let newErrors: typeof errors = {};
+    const newErrors: typeof errors = {};
     if (!email) newErrors.email = "Email is required";
     if (!password) newErrors.password = "Password is required";
 
